@@ -61,17 +61,22 @@ cd portfolio-dashboard
 
 ## 2. Install dependencies
 
+```bash
 npx create-react-app dashboard
 cd dashboard
+```
 
+```bash
 npm install -D tailwindcss@3
 npx tailwindcss init
+```
 
+```bash
 npm install @reduxjs/toolkit react-redux react-router-dom clsx
-
 npm run start
+```
 
-📸 Screenshots
+## 📸 Screenshots
 ![Screenshot 2025-05-28 115232](https://github.com/user-attachments/assets/67378441-8cf1-422e-97a5-45d5a77642b7)
 
 
