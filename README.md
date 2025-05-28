@@ -1,70 +1,77 @@
-# Getting Started with Create React App
+# Responsive Portfolio Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A responsive and modern portfolio dashboard built using **React.js**, **Redux Toolkit**, and **Tailwind CSS**.  
+It includes a collapsible sidebar, theme toggle, and multiple mock content sections.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Features
 
-### `npm start`
+- 📱 Fully responsive layout
+- 🌓 Light/Dark mode toggle
+- 📂 Collapsible sidebar using Redux state
+- 🔄 Page routing with React Router
+- ♻️ Reusable components (Button, Card)
+- 🧠 State management using Redux Toolkit
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠️ Technologies Used
 
-### `npm test`
+- **React.js**
+- **Redux Toolkit**
+- **React Router DOM**
+- **Tailwind CSS**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 📁 Folder Structure
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+src/
+├── app/ # Redux store setup
+│ └── store.js
+├── components/ # Reusable components
+│ ├── Button.jsx
+│ └── Card.jsx
+├── features/ # Redux slices
+│ └── ui/
+│ └── uiSlice.js
+├── layout/ # Sidebar and Navbar components
+│ ├── Sidebar.jsx
+│ └── Navbar.jsx
+├── pages/ # Page views (Overview, Projects, Contact)
+│ ├── Overview.jsx
+│ ├── Projects.jsx
+│ └── Contact.jsx
+├── App.js # Main layout
+├── index.js # Entry point with Redux + Router
+└── index.css # Tailwind base styles
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 🧑‍💻 Setup Instructions
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 1. Clone the repository
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+git clone https://github.com/your-username/portfolio-dashboard.git
+cd portfolio-dashboard
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 2. Install dependencies
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+npx create-react-app dashboard
+cd dashboard
 
-## Learn More
+npm install -D tailwindcss@3
+npx tailwindcss init
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+npm install @reduxjs/toolkit react-redux react-router-dom clsx
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+npm run start
 
-### Code Splitting
+📸 Screenshots
+![Screenshot 2025-05-28 115232](https://github.com/user-attachments/assets/67378441-8cf1-422e-97a5-45d5a77642b7)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
